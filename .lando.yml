@@ -1,0 +1,12 @@
+name: prueba
+recipe: drupal8
+proxy:
+  dbms:
+    - dbms-prueba.lndo.site
+config:
+  webroot: .
+services:
+  dbms:
+    type: phpmyadmin
+    hosts:
+      - database
